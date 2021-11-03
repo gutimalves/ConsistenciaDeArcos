@@ -4,7 +4,13 @@
 #cruzamento
 #fitness
 
-Def fitness(ind):
+import copy as cp
+
+def mutation(ind):
+    
+
+
+def fitness(ind):
     for i in ind:
         for j in ind: 
             if i!= j:
