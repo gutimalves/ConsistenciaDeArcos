@@ -1,1 +1,27 @@
+#populacao de individuos
+#selecao
+#mutuacao
+#cruzamento
+#fitness
+
+Def fitness(ind):
+    for i in ind:
+        for j in ind: 
+            if i!= j:
+            #verifica conflito de mesma coluna
+                if ind[i] == ind[j]:
+                   conflicts +=1
+                   
+            #verifica conflito de diagonal
+                dx = abs(ind[i] - ind[j])
+                dy = abs(i-j)
+                if dx == dy:
+                  conflicts +=1
+                
+return conflicts 
+
+it _name_ == "_main_":
+  print(fitness())
+  
+
 
