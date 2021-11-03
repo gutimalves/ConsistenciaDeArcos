@@ -42,12 +42,10 @@ if __name__ == "__main__":
     
     nodes = {'A':[1,2,3,4],
             'B':[1,2,3,4],
-            'C':[1,2,3,4],
-            'D':[1,2,3,4]}
+            'C':[1,2,3,4]}
 
-    consts = [{'name':'C1', 'scope':['A','B'], 'cons': lambda A,B : A > B },
-             {'name':'C2','scope':['B','C'], 'cons': lambda B,C : B > C },
-             {'name':'C3','scope':['C','D'], 'cons': lambda C,D : C == D }]
+    consts = [{'name':'C1', 'scope':['A','B'], 'cons': lambda A,B : A < B },
+             {'name':'C2','scope':['B','C'], 'cons': lambda B,C : B < C }]
 
     for n in nodes:
         print('{} : {}'.format(n,nodes[n]))
