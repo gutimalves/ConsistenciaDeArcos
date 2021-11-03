@@ -1,4 +1,4 @@
-#codigo encontrado na internet. 
+#codigo encontrado na internet, não entendi como as diagonais se tornam satisfatorias, mas funciona para as laterais.
 from itertools import permutations
 
 N=8
